@@ -1,0 +1,125 @@
+@mixin img-default {
+  max-width: 100%;
+  height: auto;
+}
+
+@mixin section-title-container--desktop {
+  display: flex;
+  margin: 0 0 0.7rem 0;
+}
+
+@mixin section-title-container {
+  display: flex;
+  align-content: center;
+}
+
+@mixin section-title--desktop {
+  text-transform: uppercase;
+  font-family: "Roboto Condensed";
+  font-size: 1.106rem;
+  font-weight: 700;
+  color: #000000;
+  letter-spacing: 0.25rem;
+  word-spacing: -0.06rem;
+  display: flex;
+  flex-grow: 0;
+  align-self: center;
+}
+
+@mixin section-title {
+  text-transform: uppercase;
+  font-family: "Roboto Condensed";
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000000;
+  display: flex;
+  align-self: center;
+}
+
+@mixin section-title-before--desktop($color) {
+  width: 1rem;
+  height: 1rem;
+  background-color: $color;
+  content: " ";
+  margin-right: 0.88rem;
+  align-self: center;
+}
+
+@mixin section-title-before($color) {
+  width: 0.8rem;
+  height: 0.8rem;
+  background-color: $color;
+  content: " ";
+  margin-right: 0.4rem;
+  align-self: center;
+}
+
+@mixin section-title-line--desktop($bgcolor) {
+  flex-grow: 1;
+  height: 3.2px;
+  margin-left: 0.525rem;
+  margin-top: 0.05rem;
+  background-color: $bgcolor;
+  align-self: center;
+}
+
+@mixin section-title-line($bgcolor) {
+  flex-grow: 1;
+  height: 2px;
+  background-color: $bgcolor;
+  align-self: center;
+  margin-left: 0.4rem;
+}
+
+@mixin article__title--white {
+  color: #fefefe;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.7rem;
+  line-height: 1.9rem;
+}
+
+@mixin article__paragraph--white {
+  color: #fefefe;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.32rem;
+  font-size: 0.85rem;
+}
+
+@mixin article__title {
+  color: #273238;
+  font-family: "Roboto Condensed", sans-serif;
+  // font-size: 1.3rem;//desktop
+  // line-height: 1.75rem;//desktop
+  font-size: 1rem;
+  line-height: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.03rem;
+  // margin-top: -2.3rem; //desktop
+  margin-top: -2.1rem;
+  background-color: #ffffff;
+  padding: 0.7rem 0.2rem 0 0;
+  position: relative;
+}
+
+@mixin article__paragraph {
+  color: #465a65;
+  // line-height: 1.313rem;//desktop
+  // font-size: .8rem;//desktop
+  line-height: 1rem;
+  font-size: 0.7rem;
+  font-family: "Roboto", sans-serif;
+}
+
+@mixin transform($value) {
+  -webkit-transform: ($value);
+  -moz-transform: ($value);
+  -ms-transform: ($value);
+  transform: ($value);
+}
+
+@mixin transition($value) {
+  -webkit-transition: ($value);
+  -moz-transition: ($value);
+  -ms-transition: ($value);
+  transition: ($value);
+}

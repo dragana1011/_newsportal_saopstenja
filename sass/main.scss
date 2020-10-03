@@ -1,0 +1,9 @@
+@import "base/reset";
+@import "helpers/mixins";
+@import "helpers/variables";
+@import "layout_phone-default/default-style";
+@import "layout_tablet/tablet-style";
+@import "layout_desktop/desktop-style";
+@import "layout_4K/4K-style";
+
+/*@media queries are mobile-first approach */
